@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Задание №3</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <img src="https://sun9-85.userapi.com/impg/Zf0JbxrLlQD7q2AcPsSzRo0u0STchCrxZeoh8w/MApRVzc27bM.jpg?size=140x140&quality=96&sign=9b47fb2b5598d66e48e416d30701892f&type=album" alt=" ">
+            </div>
+            <div class="header__title">
+                Анонимный Форум 2ch
+            </div>
+        </div>
+    </header>
+    <nav class="nav container">
+        <ul class="nav__link">
+            <li><a href="#link">Список </a></li>
+            <li><a href="#form">Форма</a></li>
+            <li><a href="#footer">Подвал</a></li>
+        </ul>
+    </nav>
+    <div class="flex-box container">
+        <section class="link" id="link">
+            <ol class="link__list">
+                <li class="link__menu__item"><a href="http://2ch.hk/">Абсолютная гиперссылка на главную страницу сайта</a></li>
+                <li class="link__menu__item"><a href="http://2ch.hk/">Абсолютная на главную сайта в протоколе https</a></li>
+                <li class="link__menu__item"><a href="ftp:/2ch.hk/files.file.html">Ссылка на файл на сервере FTP без авторизации</a></li>
+                <li class="link__menu__item"><a href="ftp://user:228@2ch.hk/files.file.html">Ссылку на файл на сервере FTP с авторизацией</a></li>
+                </li>
+                <li class="link__menu__item"><a href="http://2ch.hk#anchor">Ссылка на фрагмент страницы некоторого сайта</a></li>
+                <li class="link__menu__item"><a href="#top">Ссылка на фрагмент текущей страницы</a></li>
+                <li class="link__menu__item"><a href="http://2ch.hk?parameter1=p1&parameter2=p2">Ссылка с двумя параметрами в URL</a></li>
+                <li class="link__menu__item">
+                    Список ссылок основной навигации сайта с подписями title
+                    <ul>
+                        <li><a href="#head1" title="Нумерованный список гиперссылок">Нумерованный список гиперссылок</a></li>
+                        <li><a href="#head2" title="Форма">Форма</a></li>
+                    </ul>
+                </li>
+                <li class="link__menu__item"><a>Ссылка без href</a></li>
+                <li class="link__menu__item"><a href="">Ссылка с пустым href</a></li>
+                <li class="link__menu__item"><a href="http://2ch.hk" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+                <li class="link__menu__item"><a href="http://2ch.hk" rel="nofollow"><!--noindex-->Ссылка, запрещенная для индексации поисковиками<!--/noindex--></a></li>
+                <li class="link__menu__item"><p>Контекстная <a href="http://2ch.hk">ссылка</a> в тексте абзаца</p></li>
+                    <p>: <a href="">Ссылка 13</a></p>
+                </li>
+                <li class="link__menu__item">Ссылка-изображение<br/>
+                    <a href="http://2ch.hk"><img src="https://2ch.hk/makaba/templates/img/anon.jpg" width="310" height="242" alt="Описание картинки"></a>
+                <li class="link__menu__item">
+                   Ссылки из прямоугольных и круглых областей картинки<br/>
+                    <img src="https://img2.fonwall.ru/o/we/lightning-mcqueen-cars-3-smirk-animation.jpeg" width="310" height="242" alt="Описание картинки" usemap="#mymap">
+                    <map name="mymap">
+                       <area shape="rect" coords="40,25,90,150" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Philly_Thinker.JPG/330px-Philly_Thinker.JPG" alt="Прямоугольная область">
+                       <area shape="circle" coords="100,210,25" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Almeida_J%C3%BAnior_-_Mo%C3%A7a_com_Livro.jpg/330px-Almeida_J%C3%BAnior_-_Mo%C3%A7a_com_Livro.jpg" alt="Круглая область">
+                    </map>
+                </li>
+                <li class="link__menu__item"><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
+                <li class="link__menu__item"><a href="./about/page">Относительная ссылка на страницу в каталоге about</a></li>
+                <li class="link__menu__item"><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+                <li class="link__menu__item"><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+                <li class="link__menu__item"><a href="/">Сокращенная ссылка на главную</a></li>
+                <li class="link__menu__item"><a href="/pages/page">Сокращенная ссылка на внутреннюю</a></li>
+            </ol>
+        </section>
+        <table class="table">
+            <caption>Таблица</caption>
+            <tr>
+            <th>Колонка 1</th>
+            <th>Колонка 2</th>
+            <th>Колонка 3</th>
+          </tr>
+
+          <tr>
+            <td colspan="2">Ячейка 11</td>
+            <td>Ячейка 11</td>
+          </tr>
+
+          <tr class="tab">
+            <td colspan="2">Ячейка 22 </td>
+            <td>Ячейка 22 </td>
+          </tr>
+
+          <tr>
+            <td>Ячейка 33</td>
+            <td>Ячейка 33</td>
+            <td>Ячейка 33</td>
+          </tr>
+
+          <tr class="tab">
+            <td>Ячейка 44</td>
+            <td colspan="2">Ячейка 44</td>
+          </tr>
+
+          <tr>
+            <td>Ячейка 55</td>
+            <td>Ячейка 55</td>
+            <td>Ячейка 55</td>
+          </tr>
+        </table>
+       
+            <h2 id="head2">Форма</h2>
+<form action="https://www.example.com" method="POST" class="form__btn" id="form">          
+     <label>
+ 	       Имя:<br />
+ 	      <input name="field-name-1"
+ 	      value="Илья"
+          type="name"/>
+ 	    </label><br />
+		
+ 		  <label>
+ 			 Email:<br />
+ 			 <input name="field-email"
+ 			 value="ilya-fedoseev-03@mail.ru"
+ 			 type="email" />
+ 		  </label><br />
+ 			 <label>
+ 			 Дата рождения:<br />
+ 			 <input name="field-date"
+ 			 value="2003-01-14"
+ 			 type="date" />
+ 		  </label><br />
+                Количество увлечений:<br/>
+                <label>
+                    <input type="radio" name="radio-group-1" value="1"/>
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="radio-group-1" value="2"/>
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="radio-group-1" value="3"/>
+                    3
+                </label>
+                <label>
+                    <input type="radio" checked="checked" name="radio-group-1" value="4"/>
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="radio-group-1" value="5"/>
+                    5
+                </label><br/>
+                <label>
+                    Сверхспособности:<br/>
+                    <select name="p" multiple="multiple">
+                    <option value="levitation" selected="selected">Левитация</option>
+                    <option value="passingthroughwalls">Прохождение сквозь стены</option>
+                    <option value="immortality">,Бессмертие</option>
+                    </select>
+                </label><br/>
+                <label>
+                    Биография:<br/>
+                    <textarea name="bio">Здесь ты можешь рассказать о себе...</textarea>
+                </label><br/>
+                С контрактом ознакомлен(а):<br/>
+                <label>
+                    <input type="checkbox" checked="checked" name="check-1"/>
+                </label><br/>
+                <input type="submit" value="Отправить"/>
+            </form>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="footer__inner">
+            <span>(c) Илья Федосеев 2021</span>
+        </div>
+    </footer>
+</body>
+
+</html>
